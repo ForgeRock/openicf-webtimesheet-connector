@@ -36,6 +36,7 @@
 // enclosed by brackets [] replaced by your own identifying information: 
 // "Portions Copyrighted [year] [name of copyright owner]"
 // -----------
+// Portions Copyrighted 2015 ForgeRock AS
 // -- END LICENSE
 //
 // @author Zdenek Louzensky, David Adam
@@ -45,7 +46,6 @@
  *  +---------------------------------------------------+ 
  */
 
-import org.identityconnectors.contract.data.groovy.Lazy
 import org.identityconnectors.common.security.GuardedString
 
 // Connector WRONG configuration for ValidateApiOpTests
@@ -58,12 +58,5 @@ testsuite {
     bundleJar=System.getProperty("bundleJar")
     bundleName=System.getProperty("bundleName")
     bundleVersion=System.getProperty("bundleVersion")
-    connectorName=""    
-
-    // ValidateApiOpTests:
-    Validate.iterations="3"
-
-    // AuthenticationApiOpTests:
-    Authentication.__ACCOUNT__.username=Lazy.get("i0.Authentication.__ACCOUNT__.__NAME__")
-    Authentication.__ACCOUNT__.wrong.password=new GuardedString("bogus".toCharArray())  
+    connectorName=System.getProperty("connectorName")
 } // testsuite
