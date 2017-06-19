@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   Copyright 2011-2017 ForgeRock AS. All Rights Reserved
- 
+
   Use of this code requires a commercial software license with ForgeRock AS.
   or with one of its affiliates. All use shall be exclusively subject
   to such license between the licensee and ForgeRock AS.
@@ -11,9 +11,8 @@
     <parent>
         <groupId>org.forgerock.openicf.connectors</groupId>
         <artifactId>connectors-parent</artifactId>
-        <version>1.5.0.0-SNAPSHOT</version>
+        <version>1.5.3.0</version>
     </parent>
-    <groupId>org.forgerock.openicf.connectors</groupId>
     <artifactId>webtimesheet-connector</artifactId>
     <version>1.1.0.0-SNAPSHOT</version>
     <packaging>bundle</packaging>
@@ -34,8 +33,6 @@
         <url>http://stash.forgerock.org/projects/OPENICF/repos/webtimesheet-connector/browse/</url>
     </scm>
     <properties>
-        <maven.compiler.target>1.6</maven.compiler.target>
-        <maven.compiler.source>1.6</maven.compiler.source>
         <connectorPackage>org.forgerock.openicf.connectors.webtimesheet</connectorPackage>
         <connectorClass>WebTimeSheetConnector</connectorClass>
         <framework.compatibilityVersion>1.1</framework.compatibilityVersion>
@@ -43,17 +40,17 @@
     </properties>
     <repositories>
         <repository>
-            <id>forgerock-staging-repository</id>
-            <name>ForgeRock Release Repository</name>
-            <url>http://maven.forgerock.org/repo/releases</url>
+            <id>forgerock-internal-releases</id>
+            <name>ForgeRock Internal Release Repository</name>
+            <url>http://maven.forgerock.org/repo/internal-releases</url>
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
         </repository>
         <repository>
-            <id>forgerock-snapshots-repository</id>
-            <name>ForgeRock Snapshot Repository</name>
-            <url>http://maven.forgerock.org/repo/snapshots</url>
+            <id>forgerock-internal-snapshots</id>
+            <name>ForgeRock Internal Snapshot Repository</name>
+            <url>http://maven.forgerock.org/repo/internal-snapshots</url>
             <releases>
                 <enabled>false</enabled>
             </releases>

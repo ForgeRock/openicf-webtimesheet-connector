@@ -24,8 +24,11 @@ package org.identityconnectors.webtimesheet;
 
 import java.util.*;
 
-import org.junit.*;
-import junit.framework.Assert;
+
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 import org.identityconnectors.common.logging.Log;
 import org.identityconnectors.framework.common.objects.*;
@@ -105,7 +108,7 @@ public class WebTimeSheetConnectorTests {
 
         log.info("handled {0} results", r.size());
         System.out.println("Users:" + r);
-        Assert.assertTrue("zero results returned", r.size() > 0);
+        Assert.assertTrue(r.size() > 0);
     }
 
     @Test
@@ -125,7 +128,7 @@ public class WebTimeSheetConnectorTests {
         List<ConnectorObject> r = TestHelpers.searchToList(testConnector, new ObjectClass("Department"), null, ob.build());
         log.info("handled {0} results", r.size());
         System.out.println("Departments:" + r);
-        Assert.assertTrue("zero results returned", r.size() > 0);
+        Assert.assertTrue( r.size() > 0);
     }
 
     @Test
@@ -139,7 +142,7 @@ public class WebTimeSheetConnectorTests {
         List<ConnectorObject> r = TestHelpers.searchToList(testConnector, new ObjectClass("Department"), null, ob.build());
         log.info("handled {0} results", r.size());
         System.out.println("Departments:" + r);
-        Assert.assertTrue("zero results returned", r.size() > 0);
+        Assert.assertTrue( r.size() > 0);
     }
 
     @Test
