@@ -14,7 +14,7 @@
         <version>1.5.3.0</version>
     </parent>
     <artifactId>webtimesheet-connector</artifactId>
-    <version>1.1.0.0-SNAPSHOT</version>
+    <version>1.1.0.0</version>
     <packaging>bundle</packaging>
     <name>WebTimeSheet Connector</name>
     <description>Connector for WebTimeSheet</description>
@@ -40,20 +40,21 @@
     </properties>
     <repositories>
         <repository>
-            <id>forgerock-internal-releases</id>
-            <name>ForgeRock Internal Release Repository</name>
-            <url>http://maven.forgerock.org/repo/internal-releases</url>
+            <id>forgerock-private-releases</id>
+            <name>ForgeRock Private Release</name>
+            <url>http://maven.forgerock.org/repo/private-releases</url>
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
         </repository>
+        
         <repository>
-            <id>forgerock-internal-snapshots</id>
-            <name>ForgeRock Internal Snapshot Repository</name>
-            <url>http://maven.forgerock.org/repo/internal-snapshots</url>
-            <releases>
+            <id>forgerock-internal-releases</id>
+            <name>ForgeRock Private Release</name>
+            <url>http://maven.forgerock.org/repo/releases</url>
+            <snapshots>
                 <enabled>false</enabled>
-            </releases>
+            </snapshots>
         </repository>
     </repositories>
     <dependencies>
