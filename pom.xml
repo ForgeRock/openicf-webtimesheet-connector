@@ -39,7 +39,7 @@
         <repository>
             <id>forgerock-private-releases</id>
             <name>ForgeRock Private Release</name>
-            <url>http://maven.forgerock.org/repo/private-releases</url>
+            <url>http://maven.forgerock.org/artifactory/private-releases</url>
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
@@ -48,7 +48,7 @@
         <repository>
             <id>forgerock-internal-releases</id>
             <name>ForgeRock Private Release</name>
-            <url>http://maven.forgerock.org/repo/releases</url>
+            <url>http://maven.forgerock.org/artifactory/releases</url>
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
